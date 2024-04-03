@@ -6,19 +6,17 @@
   #define nl cout<<"\n";
   #define onjudge  #ifndef ONLINE_JUDGE freopen("./input.txt", "r", stdin); freopen("./output.txt", "w", stdout);#endif
   void solve() {
-    int n;cin>>n;
-    int sp=n-1;
-    for(int i=1;i<=n;i++){
-      for(int j=n;j>i;j--){cout<<' ';}
-      for(int j=0;j<2*i-1;j++){cout<<'*';}
-      nl;
-    }
-    for(int i=n;i>0;i--){
-      for(int j=n;j>i;j--){cout<<' ';}
-      for(int j=0;j<2*i-1;j++){cout<<'*';}
-      nl;
-    }
-
+    ll n,k,a;cin>>n>>k>>a;
+    ll y=(n*k);
+    double x=(n*k)/a;
+    // double z=x-floor(x);
+    // if(x<=2147483647 && z==0) cout<<"int";
+    // else if(x>2147483647 && z==0) cout<<"long long";
+    // else cout<<"double";
+    if(y%a!=0) cout<<"double";
+    else if(x<=2147483647) cout<<"int";
+    else cout<<"long long";
+   
   }
   int main(){
       fast;
