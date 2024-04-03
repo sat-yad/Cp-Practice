@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -7,16 +6,13 @@ using namespace std;
 #define nl cout<<"\n";
 #define onjudge  #ifndef ONLINE_JUDGE freopen("./input.txt", "r", stdin); freopen("./output.txt", "w", stdout);#endif
 void solve() {
-    ll a,b;cin>>a>>b;
-    ll s=a+b;
-    ll d=a-b;
-    ll mul=a*b;
-    cout<<a<<" + "<<b<<" = "<<s;nl;
-    cout<<a<<" * "<<b<<" = "<<mul;nl;
-    cout<<a<<" - "<<b<<" = "<<d;nl;
+  ll n=3;
+  int arr[3];
+  fl(0,3) cin>>arr[i];
+  sort(arr,arr+3);
+  cout<<arr[0]<< " " << arr[2]<<endl;
 }
 int main(){
     fast;
  solve();
 }
-
