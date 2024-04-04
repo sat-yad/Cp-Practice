@@ -6,13 +6,10 @@ using namespace std;
 #define nl cout<<"\n";
 #define onjudge  #ifndef ONLINE_JUDGE freopen("./input.txt", "r", stdin); freopen("./output.txt", "w", stdout);#endif
 void solve() {
-    string pass;
-    while(cin>>pass){
-        if(pass=="1999"){cout<<"Correct";return;}
-        cout<<"Wrong";
-        nl;
-    }
-
+ll a,b;cin>>a>>b;
+if(a-b>=0) cout<<a-b;
+else cout<<0;
+nl;
 }
 int main(){
     fast;

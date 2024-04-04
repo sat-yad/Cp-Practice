@@ -53,19 +53,14 @@ typedef vector<pll>      vpll;
 #define onjudge  #ifndef ONLINE_JUDGE freopen("./input.txt", "r", stdin); freopen("./output.txt", "w", stdout);#endif
 const ll mod=1000000007;
 void solve() {
-  ll n,m;
-  while(true){
-    cin>>n>>m;
-  if((n<=0 || m<=0)){
-    break;
+  int k,s,cnt=0;cin>>k>>s;
+  for(int i=0;i<=k;i++){
+    for(int j=0;j<=k;j++){
+      int a=s-i-j;
+      if(a>=0 && a<=k) cnt++;
+    }
   }
-  else{
-    ll sum=0;
-    fl(i,min(n,m),max(n,m)+1){sum+=i; cout<<i<<" ";}
-    cout<<"sum ="<<sum;
-  }
-  nll;
-  }
+  cout<<cnt;
 }
 int main(){
     fast;
